@@ -1,5 +1,4 @@
 <script setup>
-console.log('ggg');
 
 </script>
 <template>
