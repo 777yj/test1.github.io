@@ -10,7 +10,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // vue.config.js
 
 // 基本路径根据当前是生产环境还是开发环境来判断
-let BASE_URL = process.env.NODE_ENV === 'production' ? '/vue-mlhh/' : '/'
+// let BASE_URL = process.env.NODE_ENV === 'production' ? '/vue-mlhh/' : '/'
 
 
 
@@ -28,7 +28,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()]
     })
   ],
-  base:BASE_URL,
+  base:'test1.github.io',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
