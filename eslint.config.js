@@ -12,18 +12,15 @@ export default [
     name: 'app/files-to-ignore',
     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
-    
-
 
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
   skipFormatting,
 
 
-{
-      rules: {
+      rules,{
     'prettier/prettier': [
-      'warn',          
+      'warn',
       {
         singleQuote: true, // 单引号
         semi: false, // 无分号
@@ -42,10 +39,82 @@ export default [
     // 💡 添加未定义变量错误提示，create-vue@3.6.3 关闭，这里加上是为了支持下一个章节演示。
     'no-undef': 'error'
   },
-      globals: {
+      globals, {
       ElMessage: 'readonly',
       ElMessageBox: 'readonly',
       ElLoading: 'readonly'
     }
-  }
+  
 ]
+
+// import js from '@eslint/js'
+// import pluginVue from 'eslint-plugin-vue'
+// import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+
+// export default [
+//   {
+//     name: 'app/files-to-lint',
+//     files: ['**/*.{js,mjs,jsx,vue}']
+//   },
+//   {
+//     name: 'app/files-to-ignore',
+//     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**']
+//   },
+//   js.configs.recommended,
+//   ...pluginVue.configs['flat/essential'],
+//   skipFormatting,
+//   {
+//     languageOptions: {
+//       globals: {
+//         ElMessage: 'readonly',
+//         ElMessageBox: 'readonly',
+//         ElLoading: 'readonly'
+//       }
+//     },
+//      "plugins": ["prettier"],
+//     rules: {
+//       'prettier/prettier': [
+//         'warn',
+//         {
+//           singleQuote: true,
+//           semi: false,
+//           printWidth: 80,
+//           trailingComma: 'none',
+//           endOfLine: 'auto'
+//         }
+//       ],
+//       'vue/multi-word-component-names': [
+//         'warn',
+//         {
+//           ignores: ['index']
+//         }
+//       ],
+//       'vue/no-setup-props-destructure': ['off'],
+//       'no-undef': 'error'
+//     }
+//   }
+// ]
+
+
+// import js from '@eslint/js'
+// import pluginVue from 'eslint-plugin-vue'
+
+// export default [
+//   {
+//     name: 'app/files-to-lint',
+//     files: ['**/*.{js,mjs,jsx,vue}'],
+//   },
+
+//   {
+//     name: 'app/files-to-ignore',
+//     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
+//   },
+
+//   js.configs.recommended,
+//   ...pluginVue.configs['flat/essential'],
+//   rules,{
+//     'vue/multi-word-component-names':0,
+    
+    
+//   }
+// ]

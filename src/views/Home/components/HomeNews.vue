@@ -46,7 +46,6 @@ const enterpriseNews = ref([
       <div class="news-title-wrapper">
         <h2 class="news-title">
           <s class="news-title-icon">|</s>
-          
           行业新闻hhhhh</h2>
         <a href="#" class="more-link">更多+</a>
       </div>

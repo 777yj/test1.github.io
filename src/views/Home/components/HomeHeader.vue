@@ -2,7 +2,7 @@
 <script setup>
 // import { ref, watch } from 'vue';
 // import { useRoute } from 'vue-router';
-// import { Phone } from '@element-plus/icons-vue';
+import { Phone } from '@element-plus/icons-vue';
 
 // const route = useRoute();
 // const activeIndex = ref(route.path);
@@ -34,7 +34,7 @@
     <!-- 主体内容 -->
     <el-main>
       <!-- 水平导航菜单 -->
-       <el-menu :default-active="activeIndex" class="nav-menu" mode="horizontal">
+       <el-menu class="nav-menu" mode="horizontal">
         <el-menu-item index="/">网站首页</el-menu-item>
         <el-menu-item index="/about">关于我们</el-menu-item>
         <el-menu-item index="/product-center">产品中心</el-menu-item>
