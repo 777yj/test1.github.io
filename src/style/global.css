@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans - serif;
+}
+
+.el-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+
+.el-main {
+  padding: 20px;
+}
+
+.router-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.router-link-active {
+  color: #409eff;
+}
