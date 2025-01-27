@@ -28,14 +28,15 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()]
     })
   ],
-  base:process.env.NODE_ENV === 'production' ? '/vue-mlhh/':'/',
+  base: '/',
+  // base:process.env.NODE_ENV === 'production' ? '/vue-mlhh/':'/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  build: {
-    outDir: 'dist'
-  }
+  // build: {
+  //   outDir: 'docs'
+  // }
 })
 
